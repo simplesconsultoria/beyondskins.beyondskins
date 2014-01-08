@@ -1,3 +1,10 @@
+/******************************************
+
+ Change values and compile your .less file
+ This will generate your final .css file
+
+******************************************/
+
 // fonts
 @import url(http://fonts.googleapis.com/css?family=Unica+One);
 
@@ -17,6 +24,7 @@
 @header: #646464;
 @header-link: #fff; 
 @header-text: #fff;
+@header-width: 250px;
 
 // navegacao
 @nav: #646464;
@@ -43,7 +51,7 @@
 /* Very very simple, semantic and human friendly columns */
 
 /* Column size */
-#main         {.wrapper-size;}
+#main         {width: auto;}
 #main-content {width: auto;}
 #column-one   {width:  @coluna1;}
 #column-two   {width:  @coluna2;}
@@ -62,25 +70,10 @@
 
 // Aditional styles
 @border: #fff 1px solid;
-.gradient {
-	background: -webkit-linear-gradient(@main-bg, #f1f1f1); /* For Safari */
-	background: -o-linear-gradient(@main-bg, #f1f1f1); /* For Opera 11.1 to 12.0 */
-	background: -moz-linear-gradient(@main-bg, #f1f1f1); /* For Firefox 3.6 to 15 */
-	background: linear-gradient(@main-bg, #f1f1f1); /* Standard syntax (must be last) */
-}
 .wrapper-size {
+	margin-left: @header-width;
 	padding: 2em;
-	margin-left: 22%;
-	margin-right: 2%;
 }
-.shadow {
-	box-shadow: 0 2px 3px #ccc;
-}
-.text-shadow {
-	text-shadow: 1px 1px 2px contrast(@header-link);
-	-webkit-text-stroke: 1px @header-link;
-}
-
 
 /********** Basic styles **********/
 body {
@@ -144,7 +137,7 @@ header {
     bottom: 0;
     left: 0;
     z-index: 2;
-    width: 20%;
+    width: @header-width;
     text-align: center;
     opacity: 0.8;
 }
@@ -164,9 +157,6 @@ header a:hover {
 
 /* banner */
 
-#logo {
-
-}
 #logo img {
 	margin: 0.2em 1em 0.2em 0;
 	max-width: 100%;
@@ -207,6 +197,7 @@ div.managePortletsLink, a.managePortletsFallback {
 	background: @main-bg;
 }
 /********** Content **********/
+
 /* breadcrumb */
 #portal-breadcrumbs {
 	.wrapper-size;
@@ -272,6 +263,8 @@ dl.portlet dt.portletHeader {
 .portletHeader a,
 dl.portlet dt.portletHeader a {
     color: @title-color;
+    padding: 0;
+	font-size: 1.5em;
 }
 .portlet {
     margin-bottom: 2em;
@@ -317,12 +310,13 @@ aside a {
 /********** Footer **********/
 footer {
 	.wrapper-size;
-	border-top: @border;
 	margin-top: 2em;
     font-size: 80%;
 }
 footer p {
 	margin-bottom: 2em;
+	padding: 2em 0;
+	border-top: @border;
 }
 
 /**** RESPONSIVE ***/

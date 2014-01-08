@@ -31,6 +31,8 @@
         <copy attributes="href title" css:content="#portal-logo" css:theme="#logo a" />
         <copy attributes="style" css:content="#portal-header" css:theme="header" />
         <replace css:content="#portal-globalnav li" css:theme-children="nav ul" />
+        <drop css:content=".searchSection" />
+        <replace css:content="#portal-searchbox" css:theme="#portal-searchbox" />
         <replace css:content="#portal-breadcrumbs" css:theme="#portal-breadcrumbs" method="raw" />
         <drop css:content="#portal-breadcrumbs" />
 

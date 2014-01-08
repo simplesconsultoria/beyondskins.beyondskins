@@ -77,6 +77,7 @@
 
 /********** Basic styles **********/
 body {
+	font-size: 120%;
 	background: @main-bg url(img/blur.jpg) no-repeat fixed;
 	color: @main-text; 
 	font-family: @main-font;
@@ -188,6 +189,26 @@ nav li a:hover {
     opacity: 0.8;
 }
 
+#portal-searchbox {
+	float: none;
+	margin:	0;
+	position: absolute;
+	bottom: 25px;
+}
+#portal-searchbox form {
+	border: 1px solid #fff;
+	padding: 1%;
+}
+#searchGadget {
+	width: 67%;
+	border: none;
+	background-color: #666;
+}
+#searchGadget input.searchButton {
+	background: transparent;
+	border: none;
+}
+
 
 #portal-personaltools,
 #portal-personaltools dd {
@@ -204,7 +225,6 @@ div.managePortletsLink, a.managePortletsFallback {
 	font-size: 80%;
 	clear: both;
 	color: #fff;
-	padding: 0 2em;
 }
 #portal-breadcrumbs a, .breadcrumbSeparator {
 	color: #fff;

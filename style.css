@@ -88,9 +88,9 @@ dl.portlet a:hover {
   padding: 0;
 }
 #main {
-  background: transparent;
   margin-left: 250px;
-  padding: 2em;
+  padding: 0 2em 2em !important;
+  background: transparent;
 }
 #user {
   float: right;
@@ -137,6 +137,7 @@ nav {
 }
 nav li {
   display: block;
+  margin: 1em 0;
 }
 nav li a:link {
   font-size: 110%;
@@ -152,24 +153,50 @@ nav li a:hover {
   color: #ffffff;
   opacity: 0.8;
 }
+/* search */
 #portal-searchbox {
   float: none;
   margin: 0;
   position: absolute;
-  bottom: 25px;
+  bottom: 3em;
 }
 #portal-searchbox form {
-  border: 1px solid #fff;
-  padding: 1%;
+  background: #646464;
+  border: 1px solid #e6e6e6;
+  padding: 1% 0 1% 1%;
+  margin-right: 2em;
 }
 #searchGadget {
   width: 67%;
   border: none;
-  background-color: #666;
+  background-color: #646464;
+  color: #fff;
 }
 #searchGadget input.searchButton {
   background: transparent;
   border: none;
+}
+#LSResult {
+  color: #fff;
+  position: absolute;
+  left: 7em;
+  background: #e6e6e6;
+  margin: -1.5em 0px 0px -7em;
+  bottom: 3em;
+}
+#LSResult fieldset {
+  background: #646464;
+}
+#livesearchLegend {
+  background-color: #646464;
+}
+.LSBox input.searchButton {
+  background: #e6e6e6;
+  border: none;
+  margin: 1px;
+  font-size: 90%;
+  font-weight: bold;
+  padding: 0.2em;
 }
 #portal-personaltools,
 #portal-personaltools dd {
@@ -180,6 +207,9 @@ a.managePortletsFallback {
   background: #646464;
 }
 /********** Content **********/
+#content-core {
+  margin-top: 5em;
+}
 /* breadcrumb */
 #portal-breadcrumbs {
   margin-left: 250px;
@@ -187,13 +217,13 @@ a.managePortletsFallback {
   font-size: 80%;
   clear: both;
   color: #fff;
+  margin-bottom: 0;
+  margin-left: 267px;
+  padding: 3em 2em 0 2em;
 }
 #portal-breadcrumbs a,
 .breadcrumbSeparator {
   color: #fff;
-}
-.section-front-page #portal-breadcrumbs {
-  display: none;
 }
 #content div.documentByLine,
 #content .discreet,
@@ -222,14 +252,73 @@ h1 {
   font-size: 4.5em;
   line-height: 1em;
 }
-h2 {
+h2,
+h3,
+h4,
+h5 {
   color: #ffffff;
+}
+#content ul,
+#content ol {
+  margin-bottom: 1em;
 }
 #content .documentDescription,
 #content #description {
   color: #ffffff;
   font-weight: normal;
   margin-bottom: 1em;
+}
+#category a.link-category:hover {
+  background: #646464;
+}
+/* overlay, tables and warning fixes */
+div.overlay,
+div.overlay h1 {
+  color: #000;
+}
+#content ul.formTabs {
+  background-color: #646464;
+  border: 0.3em solid #646464;
+}
+.fieldLabel {
+  background: #646464;
+}
+.fieldPreview {
+  color: #000;
+}
+.formHelp {
+  color: #fff;
+}
+table.listing th {
+  background: transparent;
+  color: #fff;
+}
+table.listing tbody tr.odd {
+  background: transparent;
+}
+table.listing td.draggable {
+  background: transparent;
+}
+table.listing tbody tr.odd td {
+  background: transparent;
+}
+table.listing tbody tr td {
+  border: 1px solid #fff;
+}
+table.listing td.draggable {
+  background: transparent !important;
+}
+dl.portalMessage,
+div.attention,
+div.caution,
+div.danger,
+div.error,
+div.hint,
+div.important,
+div.note,
+div.tip,
+div.warning {
+  background-color: transparent;
 }
 /********** Tiles **********/
 /*********** Portlets ***********/

@@ -114,8 +114,9 @@ dl.portlet a:hover {
 }
 
 #main {
+	margin-left: @header-width;
+	padding: 0 2em 2em !important;
 	background: transparent;
-	.wrapper-size
 }
 
 #user {
@@ -173,6 +174,7 @@ nav {
 }
 nav li {
 	display: block;
+	margin: 1em 0;
 }
 nav li a:link {
     font-size: 110%;
@@ -189,26 +191,51 @@ nav li a:hover {
     opacity: 0.8;
 }
 
+/* search */
 #portal-searchbox {
 	float: none;
 	margin:	0;
 	position: absolute;
-	bottom: 25px;
+	bottom: 3em;
 }
 #portal-searchbox form {
-	border: 1px solid #fff;
-	padding: 1%;
+    background: @main-bg;
+	border: 1px solid @main-link;
+	padding: 1% 0 1% 1%;
+	margin-right: 2em;
 }
 #searchGadget {
 	width: 67%;
 	border: none;
-	background-color: #666;
+	background-color: @main-bg;
+	color: #fff;
 }
 #searchGadget input.searchButton {
 	background: transparent;
 	border: none;
 }
-
+#LSResult {
+    color: #fff;
+    position: absolute;
+    left: 7em;
+    background: @main-link;
+    margin: -1.5em 0px 0px -7em;
+    bottom: 3em;
+}
+#LSResult fieldset {
+    background: @main-bg;
+}
+#livesearchLegend {
+    background-color: @main-bg;
+}
+.LSBox input.searchButton {
+    background: @main-link;
+    border: none;
+    margin: 1px;
+    font-size: 90%;
+    font-weight: bold;
+    padding: 0.2em;
+}
 
 #portal-personaltools,
 #portal-personaltools dd {
@@ -219,19 +246,24 @@ div.managePortletsLink, a.managePortletsFallback {
 }
 /********** Content **********/
 
+#content-core {
+    margin-top: 5em;
+}
+
 /* breadcrumb */
 #portal-breadcrumbs {
 	.wrapper-size;
 	font-size: 80%;
 	clear: both;
 	color: #fff;
+	margin-bottom: 0;
+	margin-left: 267px;
+	padding: 3em 2em 0 2em;
 }
 #portal-breadcrumbs a, .breadcrumbSeparator {
 	color: #fff;
 }
-.section-front-page #portal-breadcrumbs {
-    display: none;
-}
+
 
 #content div.documentByLine,
 #content .discreet, 
@@ -258,14 +290,69 @@ h1 {
     font-size: 4.5em;
     line-height: 1em;
 }
-h2 {
+h2, h3, h4, h5 {
     color: @title-color;    
 }
+
+#content ul, #content ol {
+margin-bottom: 1em;
+}
+
 #content .documentDescription, #content #description {
     color: lighten(@main-text, 10%); 
     font-weight: normal;
     margin-bottom: 1em;
 }
+
+#category a.link-category:hover {
+    background: @main-bg;
+}
+
+
+/* overlay, tables and warning fixes */
+div.overlay,
+div.overlay h1 {
+    color: #000;
+}
+#content ul.formTabs {
+    background-color: @main-bg;
+    border: 0.3em solid @main-bg;
+}
+.fieldLabel {
+    background: @main-bg;
+}
+.fieldPreview {
+    color: #000;
+}
+.formHelp {
+    color: #fff;
+}
+
+
+table.listing th {
+    background: transparent;
+    color: #fff;
+}
+table.listing tbody tr.odd {
+    background: transparent;
+}
+table.listing td.draggable {
+    background: transparent;
+}
+table.listing tbody tr.odd td {
+    background: transparent;
+}
+table.listing tbody tr td {
+    border: 1px solid #fff;
+}
+table.listing td.draggable {
+    background: transparent !important;
+}
+dl.portalMessage, div.attention, div.caution, div.danger, 
+div.error, div.hint, div.important, div.note, div.tip, div.warning {
+    background-color: transparent;
+}
+
 
 /********** Tiles **********/
 

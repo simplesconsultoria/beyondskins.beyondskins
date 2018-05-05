@@ -1,0 +1,21 @@
+Changelog
+=========
+
+0.1dev (unreleased)
+-------------------
+
+- Added a simple Diazo package (Zip file) [macagua]
+
+- Added Plone theme package structure [macagua]
+
+- Styles update [agnogueira]
+
+- Add search [agnogueira]
+
+- Update preview [agnogueira]
+
+- CSS organization [agnogueira]
+
+- Initial upload with layout and styles files [agnogueira]
+
+- Initial release

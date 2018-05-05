@@ -91,7 +91,7 @@ The project is licensed under the GPLv2.
 Credits
 -------
 
-- Andre Nogueira (andre at simplesconsultoria dot com dot br).
+- Andre Nogueira (agnogueira at gmail dot com).
 
 .. _`Simples Consultoria`: http://www.simplesconsultoria.com.br/
 .. _`plone.app.theming`: https://pypi.org/project/plone.app.theming/

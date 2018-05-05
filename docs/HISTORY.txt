@@ -4,7 +4,7 @@ Changelog
 0.1dev (unreleased)
 -------------------
 
-- Added a simple Diazo package (Zip file) [macagua]
+- Added a simple Diazo theme package (Zip file) [macagua]
 
 - Added Plone theme package structure [macagua]
 

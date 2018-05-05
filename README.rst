@@ -91,7 +91,6 @@ The project is licensed under the GPLv2.
 Credits
 -------
 
-- Thiago Tamosauskas (thiago at simplesconsultoria dot com dot br).
 - Andre Nogueira (andre at simplesconsultoria dot com dot br).
 
 .. _`Simples Consultoria`: http://www.simplesconsultoria.com.br/

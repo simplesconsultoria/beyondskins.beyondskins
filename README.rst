@@ -22,7 +22,7 @@ Screenshots
 
 Layout of the site when viewed in a computer resolution:
 
-.. image:: https://github.com/simplesconsultoria/beyondskins.beyondskins/raw/master/beyondskins/minimalist/static/preview.png
+.. image:: https://github.com/simplesconsultoria/beyondskins.beyondskins/raw/master/beyondskins/beyondskins/static/preview.png
 
 
 Features

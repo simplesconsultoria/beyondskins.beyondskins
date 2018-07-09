@@ -1,0 +1,25 @@
+Changelog
+=========
+
+0.1dev (unreleased)
+-------------------
+
+- Updated the Diazo manifest file [macagua]
+
+- Added maintainer name and email setuptools metadata [macagua]
+
+- Added a simple Diazo theme package (Zip file) [macagua]
+
+- Added Plone theme package structure [macagua]
+
+- Styles update [agnogueira]
+
+- Add search [agnogueira]
+
+- Update preview [agnogueira]
+
+- CSS organization [agnogueira]
+
+- Initial upload with layout and styles files [agnogueira]
+
+- Initial release
